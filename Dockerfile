@@ -1,4 +1,4 @@
 FROM python:3.9-slim
-ADD main.py .
+ADD . .
 RUN pip install requests beautifulsoup4
 CMD ["python","./main.py"]
