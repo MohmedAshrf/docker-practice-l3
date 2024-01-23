@@ -1,4 +1,5 @@
 FROM python:3.9-slim
-ADD . .
+WORKDIR /app
+COPY . .
 RUN pip install requests beautifulsoup4
-CMD ["python","main.py"]
+CMD ["python","/main.py"]
