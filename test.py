@@ -1,16 +1,6 @@
-!pip install requests
-import requests
-from bs4 import BeautifulSoup
+import random
 
-URL = 'https://catfact.ninja/facts'
-
-
-
-response = requests.get(URL)
-
-soup = BeautifulSoup(response.text, 'html.parser')
-
-data = soup.select("data")
-print(data)
-print(data[0][0])
-
+with open('outfile.txt') as f:
+  lines = f.read().splitlines()
+  
+print(lines[random.randint(0,len(lines)-1)])
