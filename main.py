@@ -27,7 +27,7 @@ def main():
     n_movies = len(titles)
 
     while(True):
-        idx = random.randrange(0,n_movies)
+        idx = 1 #random.randrange(0,n_movies)
         print(f'{titles[idx]} {years[idx]}, Rating: {ratings[idx]:.1f}')
 
         break
